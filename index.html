@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Style.css">
+  <script src="./Script.js"></script>
+</head>
+
+<body>
+  <div class="brd">
+    <div class="box" id="billu">
+      <h3 class="tex" id="clr">Color</h3>
+    </div>
+  </div>
+  <div style="display: inline-block;">
+    <div class="cobo">
+      <h5>Red</h5>
+      <input type="range" id="red" oninput="onSlide('red');" value="0" max="255">
+      <h5 id="red-val">0</h5>
+    </div>
+    <div class="cobo">
+      <h5>Green</h5>
+      <input type="range" id="green" oninput="onSlide('green');" value="0" max="255">
+      <h5 id="green-val">0</h5>
+    </div>
+    <div class="cobo">
+      <h5>Blue</h5>
+      <input type="range" id="blue" oninput="onSlide('blue');" value="0" max="255">
+      <h5 id="blue-val">0</h5>
+    </div>
+  </div>
+  <br>
+  <button id="bttn" onclick="auto()">Automate</button>
+</body>
+
+</html>
